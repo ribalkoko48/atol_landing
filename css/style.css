@@ -1,0 +1,349 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url("../fonts/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+body p {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    padding: 25px 0;
+}
+
+.navigation__container, .internetKKT__container, .vtbGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navigation__container_block {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__container_block:last-child {
+    width: 47%;
+}
+
+.navigation__logoATOL {
+    width: 98px;
+    height: 27px;
+}
+
+.navigation__logoVTB {
+    width: 100px;
+    height: 35px;
+}
+
+.navigation__spVTB {
+    font-family: Roboto-Thin;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.43;
+    text-align: left;
+    color: #00295f;
+}
+
+.navigation__spVTB_accent {
+    font-family: Roboto-Medium;
+}
+
+.navigation__block {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navigation__block_icon {
+    position: absolute;
+    left: 0;
+    height: 51px;
+    width: 51px;
+}
+
+.navigation__block_info {
+    white-space: nowrap;
+    padding-left: 60px;
+    font-family: Roboto-Thin;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.43;
+    color: #00295f;
+}
+
+.navigation__block_info p:last-child {
+    float: right;
+}
+
+.navigation__block_info p:last-child > a {
+    font-family: Roboto-Thin;
+}
+
+.navigation__block_phone {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #00295f;
+}
+
+.navigation__block_info p:last-child > .singIn_accent {
+    color: #ff002e;
+    font-family: Roboto-Medium;
+}
+
+@media (max-width: 1000px) {
+    .navigation__container {
+        display: block;
+    }
+
+    .navigation__container_block {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navigation__container_block:last-child {
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .navigation__container_block {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation__block {
+        justify-content: center;
+        height: 51px;
+    }
+
+    .navigation__spVTB {
+        text-align: center;
+    }
+
+    .navigation__block_icon {
+        position: relative;
+    }
+
+    .navigation__block_info {
+        padding-left: 10px;
+    }
+}
+
+.internetKKT__container {
+    padding: 110px 20px;
+    align-items: normal;
+}
+
+.internetKKT__title {
+    max-width: 400px;
+    font-family: Roboto-Medium;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.internetKKT__line {
+    width: 130px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 32px;
+    margin-bottom: 36px;
+}
+
+.internetKKT__text {
+    font-family: Roboto-Medium;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 0.8;
+    color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.internetKKT__textDecision {
+    font-family: Roboto-Thin;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.55;
+    letter-spacing: 1.2px;
+    color: #fffefe;
+    padding-bottom: 96px;
+}
+
+.internetKKT__button {
+    width: 196px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: #ff002f;
+    font-family: Roboto-Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+}
+
+.internetKKT__okImg {
+    width: 42px;
+    height: 41px;
+}
+
+.internetKKT {
+    position: relative;
+    background-color: #343a40;
+    background: url(../img/backGroundKKT.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.internetKKT__advantagesBlock {
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.internetKKT__advantagesBlock_text {
+    padding-left: 27px;
+    max-width: 207px;
+    font-family: Roboto-Thin;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.56;
+    color: #fffefe;
+}
+
+.internetKKT__advantagesBlock:first-child {
+    padding-top: 0;
+}
+
+.internetKKT__advantagesBlock:last-child {
+    padding-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    .internetKKT__container {
+        padding: 60px 20px 100px;
+    }
+
+    .internetKKT__title {
+        font-size: 28px;
+    }
+
+    .internetKKT__text {
+        font-size: 14px;
+    }
+
+    .internetKKT__textDecision {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .internetKKT__advantagesBlock {
+        padding: 10px 0;
+    }
+
+    .internetKKT__advantagesBlock_text {
+        padding-left: 10px;
+    }
+
+    .internetKKT__okImg {
+        width: 32px;
+        height: 31px;
+    }
+
+    .internetKKT__button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.vtbGroup {
+    padding: 97px 20px;
+    display: block;
+}
+
+.vtbGroup__title {
+    padding: 13px 0 72px;
+    text-align: center;
+    font-family: Roboto-Medium;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 0.57;
+    letter-spacing: 1.4px;
+    color: #00295f;
+}
+
+.vtbGroup__accentBlock {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 46px;
+    font-family: Roboto-Thin;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.vtbGroup__accentBlock_line {
+    width: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ff002f;
+}
+
+.vtbGroup__textBlock {
+    font-family: Roboto-Thin;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.56;
+    text-align: justify;
+    color: #333333;
+}
+
+.vtbGroup__textBlock > p {
+    padding-bottom: 20px;
+}
+
+.vtbGroup__textBlock span{
+    font-family: Roboto-Medium;
+}
+
+.vtbGroup__imgsBlock {
+
+}
