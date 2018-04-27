@@ -10,7 +10,6 @@
     <meta name="MobileOptimized" content="480" />
     <meta name="HandheldFriendly" content="true" />
 
-    <!-- Шрифт -->
     <link href="./css/style.css" rel="stylesheet">
 
 </head>
@@ -57,12 +56,8 @@
                     </svg>
                 </div>
                 <div class="navigation__block_info">
-                    <p>
-                        Уже зарегистрированы?
-                    </p>
-                    <p>
-                        тогда вам <a href="#" class="singIn_accent">сюда</a>
-                    </p>
+                    <p> Уже зарегистрированы? </p>
+                    <p> тогда вам <a href="#" class="singIn_accent">сюда</a></p>
                 </div>
             </div>
         </div>
@@ -72,7 +67,6 @@
 <!-- ККТ приемущества -->
 <header class="internetKKT">
     <div class="internetKKT__container">
-
         <div class="internetKKT__container__block">
             <p class="internetKKT__title">Интернет-касса в аренду</p>
             <p class="internetKKT__line" />
@@ -80,7 +74,6 @@
             <p class="internetKKT__textDecision">Решение под ключ: онлайн платежи + фискализация</p>
             <button class="internetKKT__button">ПОДКЛЮЧИТЬСЯ</button>
         </div>
-
         <div class="internetKKT__container__block">
             <div class="internetKKT__advantagesBlock">
                 <img class="internetKKT__okImg" src="img/ok.png">
@@ -103,9 +96,7 @@
 </header>
 
 <section class="vtbGroup">
-
     <div class="vtbGroup__title">О ГРУППЕ ВТБ</div>
-
     <div class="vtbGroup__accentBlock">
         <div class="vtbGroup__accentBlock_line"></div>
         <p>Группа ВТБ – российская финансовая группа, включающая более 20 кредитных и финансовых организаций,
@@ -120,35 +111,241 @@
         АТОЛ 42ФС и программных технологий АТОЛ.
     </div>
     <div class="vtbGroup__imgsBlock">
-
-        <div>
-            <img src="./img/basket.png" />
-            <p>
-                Покупатель выбирает и оплачивает заказ на сайте интернет-магазина
-            </p>
+        <div class="vtbGroup__imgContainer">
+            <div class="vtbGroup__imgWrap">
+                <img src="./img/basket.png" />
+                <div class="vtbGroup__imgs_arrows vtbGroup__imgs_arrowsRight"></div>
+            </div>
+            <p> Покупатель выбирает и оплачивает заказ на сайте интернет-магазина </p>
         </div>
-
-        <div>
-            <img src="./img/vtb_bank.png" />
+        <div class="vtbGroup__imgContainer">
+            <div class="vtbGroup__imgWrap vtbGroup__imgWrap_vtb_bank">
+                <img class="vtbGroup__imgContainer_vtb_bank" src="./img/vtb_bank.png" />
+            </div>
         </div>
-
-        <div>
-            <img src="./img/document.png" />
-            <p>
-                АТОЛ 42ФС формирует электронный чек и отправляет его в ОФД
-            </p>
+        <div class="vtbGroup__imgContainer">
+            <div class="vtbGroup__imgWrap">
+                <div class="vtbGroup__imgs_arrows vtbGroup__imgs_arrowsLeft"></div>
+                <img src="./img/document.png" />
+            </div>
+            <p> АТОЛ 42ФС формирует электронный чек и отправляет его в ОФД </p>
         </div>
-
-        <div>
-            <img src="./img/ofd.png" />
-            <p>
-                ОФД отправялет данные в ФНС и отправляет электронный чек покупателю
-            </p>
+        <div class="vtbGroup__imgContainer">
+            <div class="vtbGroup__imgWrap">
+                <div class="vtbGroup__imgs_arrows vtbGroup__imgs_arrowsLeft"></div>
+                <img src="./img/ofd.png" />
+            </div>
+            <p> ОФД отправялет данные в ФНС и отправляет электронный чек покупателю </p>
         </div>
+    </div>
+</section>
 
+<!-- Выгоды -->
+<section class="benefits">
+    <div class="benefits__title">
+        Выгоды
+        <p>для клиентов ВТБ</p>
+    </div>
+    <div class="benefits__paragraphs">
+        <div class="benefits__paragraphBlock">
+            <div class="benefits__paragraphHeader">
+                <div class="benefits__paragraphNumber">01</div>
+                <div class="benefits__paragraphText">ТАРИФ</div>
+            </div>
+            <p>Специальная цена на услуги сервиса Атол Онлайн</p>
+        </div>
+        <div class="benefits__paragraphBlock">
+            <div class="benefits__paragraphHeader">
+                <div class="benefits__paragraphNumber">02</div>
+                <div class="benefits__paragraphText">ЛИЧНЫЙ КАБИНЕТ</div>
+            </div>
+            <p> Наглядная финансовая аналитика и статистика в личном кабинете </p>
+        </div>
+        <div class="benefits__paragraphBlock">
+            <div class="benefits__paragraphHeader">
+                <div class="benefits__paragraphNumber">03</div>
+                <div class="benefits__paragraphText">СЕРВИС</div>
+            </div>
+            <p>Готовая интеграция и автоматизированное распределение нагрузки между кассами</p>
+        </div>
+    </div>
+</section>
+
+<!-- отличные условия -->
+<section class="conditions">
+    <div class="conditions__title">
+        <p>ОТЛИЧНЫЕ УСЛОВИЯ</p>
+        <p class="redLine"></p>
+        <p>Все цены указаны <span>включая НДС</span></p>
+    </div>
+    <div class="conditions__proposition">
+        <div class="proposition__cart">
+            <div class="proposition__iconBlock">
+                <img class="kkt" src="./img/kkt.png">
+            </div>
+            <p class="proposition__title">ОДНА КАССА</p>
+            <p class="proposition__oldPrice"><strike>3 000 &#8381;</strike></p>
+            <p class="proposition__newPrice">2 100 &#8381;</p>
+            <p class="proposition__time">1 месяц</p>
+        </div>
+        <div class="proposition__cart">
+            <div class="proposition__iconBlock">
+                <img class="kkt" src="./img/kkt.png">
+                <img class="kkt" src="./img/kkt.png">
+            </div>
+            <p class="proposition__title">ДВЕ И БОЛЕЕ КАССЫ</p>
+            <p class="proposition__oldPrice"><strike>2 000 &#8381;</strike></p>
+            <p class="proposition__newPrice">1 900 &#8381;*</p>
+            <p class="proposition__time">1 месяц</p>
+            <p class="proposition__ps">*цена за одну кассу</p>
+        </div>
+        <div class="proposition__plus"></div>
+        <div class="proposition__cart">
+            <div class="proposition__iconBlock proposition__iconBlock_fn">
+                <img class="fn" src="./img/fn.png">
+            </div>
+            <p class="proposition__title">ФИСКАЛЬНЫЙ НАКОПИТЕЛЬ</p>
+            <p class="proposition__newPrice proposition__newPrice_fn">6 200 &#8381;</p>
+            <p class="proposition__time">15 месяцев</p>
+        </div>
+    </div>
+    <div class="conditions__multicarta">
+        <div class="conditions__multicarta_title">Оператор фискальных данных «Мультикарта»</div>
+        <div class="conditions__multicarta_price">
+            <p>2 832 &#8381;</p>
+            <p>год</p>
+        </div>
+        <img class="multicarta" src="img/multicarta.png">
+    </div>
+</section>
+
+<!-- как это работает -->
+<section class="howItWorks">
+
+    <div class="howItWorks__title">
+        КАК ЭТО РАБОТАЕТ
+        <p>схема подключения к АТОЛ Онлайн</p>
     </div>
 
+    <div class="howItWorks__scheme">
+        <div class="howItWorks__schemeArrows">
+            <div class="howItWorks__scheme_arrow"></div>
+            <div class="howItWorks__scheme_arrow"></div>
+            <div class="howItWorks__scheme_arrow"></div>
+        </div>
+        <div class="howItWorks__schemeWidgets">
+            <div class="howItWorks__widgetWrap">
+                <img class="howItWorks__widgetImg" src="./img/basket.png">
+                <div class="howItWorks__widgetContent">
+                    <p class="howItWorks__widgetContent_title">Регистрация в ЛК АТОЛ Онлайн</p>
+                    <p class="howItWorks__widgetContent_text">Регистрация в ОФД</p>
+                    <p class="howItWorks__widgetContent_text">Оформление КЭП (ЭЦП)</p>
+                    <p class="howItWorks__widgetContent_text">Оплата счета АТОЛ Онлайн</p>
+                    <p class="howItWorks__widgetContent_text">Получение серийного номера кассы и фискального накопителя</p>
+                </div>
+                <div class="howItWorks__time">
+                    <img class="clock" src="img/clock.png">
+                    <div>2 часа</div>
+                </div>
+                <div class="howItWorks__arrowDown"></div>
+            </div>
+            <div class="howItWorks__widgetWrap">
+                <img class="howItWorks__widgetImg" src="./img/paper.png">
+                <div class="howItWorks__widgetContent">
+                    <p class="howItWorks__widgetContent_title">Регистрация ККТ в ФНС</p>
+                    <p class="howItWorks__widgetContent_text">Регистрация в личном кабинете налогоплательщика</p>
+                    <p class="howItWorks__widgetContent_text">Заявление о регистрации контрольно-кассовой техники</p>
+                    <p class="howItWorks__widgetContent_text">Получение регистрационного номера машины (РНМ)</p>
+                    <p class="howItWorks__widgetContent_text">Формирование отчета о регистрации ККТ</p>
+                </div>
+                <div class="howItWorks__time">
+                    <img class="clock" src="img/clock.png">
+                    <div>4 часа</div>
+                </div>
+                <div class="howItWorks__arrowDown"></div>
+            </div>
+            <div class="howItWorks__widgetWrap">
+                <img class="howItWorks__widgetImg howItWorks__widgetImg_wifi" src="./img/wifi.png">
+                <div class="howItWorks__widgetContent">
+                    <p class="howItWorks__widgetContent_title">Подключение кассы к ОФД ВТБ</p>
+                    <p class="howItWorks__widgetContent_text">Получение кода активации ОФД</p>
+                    <p class="howItWorks__widgetContent_text">Добавление кассы в личном кабинете пользователя ОФД</p>
+                </div>
+                <div class="howItWorks__time">
+                    <img class="clock" src="img/clock.png">
+                    <div>1 час</div>
+                </div>
+                <div class="howItWorks__arrowDown"></div>
+            </div>
+            <div class="howItWorks__widgetWrap">
+                <img class="howItWorks__widgetImg" src="./img/success.png">
+                <div class="howItWorks__widgetContent">
+                    <p class="howItWorks__widgetContent_title">Завершение регистрации в ЛК АТОЛ Онлайн</p>
+                    <p class="howItWorks__widgetContent_text">Подтверждение регистрации кассы в ФНС</p>
+                    <p class="howItWorks__widgetContent_text">Получение настроек для интеграции</p>
+                </div>
+                <div class="howItWorks__time">
+                    <img class="clock" src="img/clock.png">
+                    <div>1 час</div>
+                </div>
+            </div>
+        </div>
+        <div class="howItWorks__footer">
+            <button class="howItWorks__button">ПОДКЛЮЧИТЬСЯ</button>
+            <p>Мы передаём данные о проведении платежа в налоговую.</p>
+            <p>Ваш бизнес соблюдает Федеральный Закон.</p>
+        </div>
+    </div>
 </section>
+
+<!-- о сервисе атол онлайн -->
+<section class="onlineService">
+    <div class="onlineService__title">
+        О СЕРВИСЕ АТОЛ ОНЛАЙН
+        <p>за две минуты</p>
+    </div>
+
+    <img class="onlineService__img" src="./img/backGroundKKT.png">
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footerInformation">
+        <div class="footerInformation__logos">
+            <div class="footerInformation__logos_block">
+                <img class="footer__atolLogo" src="./img/logoATOL.png">
+                <img class="footer__vtbLogo" src="./img/logoVTB_white.png">
+            </div>
+        </div>
+        <div class="footerInformation__benefit">
+            <p>Выгоды</p>
+            <p>Калькулятор расчёта</p>
+            <p>Этапы подключения</p>
+            <p>ООО «АТОЛ»</p>
+            <p>ИНН 5010051677</p>
+        </div>
+        <div class="footerInformation__support">
+            <p>ПОДДЕРЖКА</p>
+            <div>
+                <img class="footerInformation__img" src="./img/phone_dark.png">
+                <div>+7 (495) 137-56-66</div>
+            </div>
+            <div>
+                <img class="footerInformation__img" src="./img/dog_dark.png">
+                <div>1@atol.ru</div>
+            </div>
+            <div>
+                <img class="footerInformation__img" src="./img/location_dark.png">
+                <div>г. Москва, ул. Б. Новодмитровская, д. 14, стр. 2</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footerRights">
+        <p> © 2018 ООО "АТОЛ" Все права защищены </p>
+    </div>
+</footer>
 
 </body>
 
