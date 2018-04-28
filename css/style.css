@@ -18,6 +18,10 @@ body p {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 .navigation {
     padding: 25px 0;
 }
@@ -33,7 +37,7 @@ body p {
 .navigation__container_block {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navigation__container_block:last-child {
@@ -336,7 +340,7 @@ body p {
     background-color: #ff002f;
 }
 
-.vtbGroup__textBlock {
+.vtbGroup__textBlock, .vtbGroup__textBlock a {
     font-family: Roboto-Thin;
     font-size: 16px;
     font-weight: 100;
@@ -346,12 +350,16 @@ body p {
     padding-bottom: 76px;
 }
 
-.vtbGroup__textBlock > p {
+.vtbGroup__textBlock > p{
     padding-bottom: 20px;
 }
 
-.vtbGroup__textBlock span {
+.vtbGroup__textBlock span, .vtbGroup__textBlock a {
     font-family: Roboto-Medium;
+}
+
+.vtbGroup__textBlock a {
+    text-decoration: underline;
 }
 
 .vtbGroup__imgsBlock {
@@ -673,7 +681,7 @@ body p {
     padding-right: 300px;
 }
 
-.conditions__multicarta_title {
+.conditions__multicarta_title a {
     font-family: Roboto-Medium;
     font-size: 24px;
     font-weight: 500;
@@ -999,7 +1007,7 @@ body p {
 }
 
 .onlineService {
-    padding: 95px;
+    padding: 95px 0;
     text-align: center;
 }
 
@@ -1032,10 +1040,6 @@ body p {
     line-height: 1.8;
     text-align: left;
     color: #ffffff;
-}
-
-.footerInformation__benefit p:nth-child(3) {
-    padding-bottom: 73px;
 }
 
 .footerInformation__support {
@@ -1076,9 +1080,28 @@ body p {
     height: 41px;
 }
 
+.onlineService__imgWrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 607px;
+}
+
+.onlineService__videoWrap {
+    position: absolute;
+    left: 73px;
+    top: 26px;
+    height: 351px;
+    width: 468px;
+    overflow: hidden;
+}
+
+.onlineService__videoContent {
+    height: 100%;
+}
+
 .onlineService__img {
-    width: 200px;
-    height: 403px;
+    max-width: 612px;
+    width: 100%;
 }
 
 .footerInformation__img {
@@ -1099,6 +1122,10 @@ body p {
 }
 
 @media (max-width: 640px) {
+    .onlineService__img {
+        transform: rotate(90deg);
+    }
+
     .footerInformation, .footerInformation__logos {
         display: block;
     }
@@ -1110,15 +1137,12 @@ body p {
         align-items: center;
     }
 
-    .footerInformation__benefit p:nth-child(3) {
-        padding-bottom: 40px;
-    }
-
     .footer__atolLogo {
         padding: 0;
     }
 
     .footerInformation__benefit {
+        max-width: none;
         text-align: center;
         padding: 20px 0;
     }
@@ -1126,4 +1150,14 @@ body p {
     .footerInformation__support {
         padding: 10px;
     }
+
+    .onlineService__videoWrap {
+        height: 110%;
+        width: 57%;
+        top: -5%;
+        left: 51%;
+        transform: translateX(-50%);
+    }
+
+
 }
