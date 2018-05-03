@@ -1,16 +1,16 @@
 @font-face {
     font-family: Roboto;
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+    src: url("/src/fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
     font-family: Roboto-Thin;
-    src: url("../fonts/Roboto/Roboto-Thin.ttf");
+    src: url("/src/fonts/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
     font-family: Roboto-Medium;
-    src: url("../fonts/Roboto/Roboto-Medium.ttf");
+    src: url("/src/fonts/Roboto/Roboto-Medium.ttf");
 }
 
 body p {
@@ -73,18 +73,20 @@ button {
     position: relative;
     display: flex;
     align-items: center;
+    height: 44px;
 }
 
 .navigation__block_icon {
-    position: absolute;
-    left: 0;
-    height: 51px;
-    width: 51px;
+    height: 44px;
+}
+
+.navigation__block img {
+    height: 44px;
 }
 
 .navigation__block_info {
     white-space: nowrap;
-    padding-left: 60px;
+    padding-left: 20px;
     font-family: Roboto-Thin;
     font-size: 14px;
     font-weight: 100;
@@ -221,7 +223,7 @@ button {
 .internetKKT {
     position: relative;
     background-color: #343a40;
-    background: url(../img/backGroundKKT.png) no-repeat center center;
+    background: url(/src/img/backGroundKKT.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1105,7 +1107,6 @@ button {
 }
 
 .footerInformation__img {
-    width: 45px;
     height: 45px;
     padding-right: 19px;
 }
@@ -1158,6 +1159,4 @@ button {
         left: 51%;
         transform: translateX(-50%);
     }
-
-
 }
